@@ -3,8 +3,8 @@
 {% block content %}
 	<div class="post">
     <h2>New post</h2>
-    <form method="POST" class="post-form">{% csrf_token %}
-        {{ form.as_p }}
-        <button class="btn btn-default"><span class="glyphicon glyphicon-save"></button>
-    </form>
+    	<form method="POST" class="post-form">{% csrf_token %}
+        	{{ form.as_p }}
+        	<button class="btn btn-default"><span class="glyphicon glyphicon-save"></button>
+    	</form>
 {% endblock %}
