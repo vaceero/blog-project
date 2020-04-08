@@ -14,7 +14,11 @@
 .content {
 	margin-left: 40px;
 }
-
+.button-post .button-post:hover, .button-post:visited {
+	color: #ffffff;
+	font-size: 40pt;
+	margin-right: 20px;
+}
 h1, h2, h3, h4 {
 	font-family: 'Lobster', cursive;
 }
