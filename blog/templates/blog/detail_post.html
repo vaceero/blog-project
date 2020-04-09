@@ -17,4 +17,14 @@
 			<a class="btn btn-default" href="{% url 'edit_post' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 			<a class="btn btn-default" href="{% url 'delete_post' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
 	</div>
+	<hr>
+	{% for comment in post.comments.all %}
+		<div class="comment">
+			<div class="date">{{ comment.created_date }}</div>
+			<strong>{{ comment.author }}</strong>
+			<p>{{ comment.text|linebreaks }}</p>
+		</div>
+		{% empty %}
+		<p>No comments :(</p>
+	{% endfor %}
 {% endblock %}

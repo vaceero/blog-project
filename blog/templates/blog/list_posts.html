@@ -8,6 +8,7 @@
         	<div class="date">
         		<p>published: {{ post.published_date }}</p>
         	</div>
+        	<i>Comments: {{ post.comments.count }}</i>
         </div>
     {% endfor %}
-{% endblock %}
+{% endblock content %}
