@@ -18,6 +18,7 @@
 			<a class="btn btn-default" href="{% url 'delete_post' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
 	</div>
 	<hr>
+	<a class="btn btn-default" href="{% url 'add_comment' pk=post.pk %}">Add comment</a>
 	{% for comment in post.comments.all %}
 		<div class="comment">
 			<div class="date">{{ comment.created_date }}</div>
